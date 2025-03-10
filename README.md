@@ -1,6 +1,7 @@
 #application #task #dataset
 
 Robert Wang, Olivia Joergens, & Margaux Reyl
+
 # Abstract 
 
 Our project aimed to improve the accuracy of machine learning models in predicting user demographics, specifically gender, from Twitter data. By analyzing both tweet content and publicly available user information, we focused on constructing a model that can more accurately determine these demographic traits relative to pre existing methods. Our results indicated that models in which usernames and bios were incorporated in training increased performance relative to those that rely solely on tweet text, while location data was found to introduce noise and did not increase performance. We additionally explored the application of synthetic tweet generation in enhancing model robustness, finding that the addition of synthetic tweets did not improve model performance.  Our findings shed light on how language and user metadata influence demographic classification, posing applications to a wide range of disciplines including social science research, digital advertising, and content personalization. 
@@ -102,34 +103,41 @@ Location | 64.60% | 63.30%
 ## Performance by Gender
 
 No Fake Tweets:
-<meta charset="utf-8"><b style="font-weight:normal;" id="docs-internal-guid-2c06763c-7fff-6c1a-e6ee-89b3edbf3024"><p dir="ltr" style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:3pt 0pt 0pt 0pt;"></p><div dir="ltr" style="margin-left:0pt;" align="left">
-male |   |  
+
+<google-sheets-html-origin><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->
+male |   |  
 -- | -- | --
 Precision | Recall | F1-Score
 0.585 | 0.648 | 0.614
-  |   |  
-female |   |  
+  |   |  
+female |   |  
 Precision | Recall | F1-Score
 0.684 | 0.642 | 0.662
-  |   |  
-brand |   |  
+  |   |  
+brand |   |  
 Precision | Recall | F1-Score
 0.819 | 0.788 | 0.803
 
+
+
 Fake Tweets Included:
 
-male |   |  
+
+<google-sheets-html-origin><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->
+male |   |  
 -- | -- | --
 Precision | Recall | F1-Score
 0.613 | 0.641 | 0.626
-  |   |  
-female |   |  
+  |   |  
+female |   |  
 Precision | Recall | F1-Score
 0.693 | 0.669 | 0.681
-  |   |  
-brand |   |  
+  |   |  
+brand |   |  
 Precision | Recall | F1-Score
 0.827 | 0.821 | 0.822
+
+
 
 - Across all models, the models on average perform worse across all metrics in identifying male tweets. The only exception is the recall of male tweets compared to female tweets in the metadata only model (0.648 vs 0.642).
 - Across all models, the models on average perform the best in recognizing brands across all metrics.
@@ -142,8 +150,5 @@ We encountered several limitations throughout our conducting of this project: 1)
 
 # Future Steps
 
-Further work on this project would include retraining the model using a significantly larger dataset to enhance its generalizability and overall performance. While we ultimately trained our model on 5,000 tweets, expanding the dataset could provide deeper insights into model accuracy and robustness. Additionally, incorporating a more diverse range of gender identifications and other available demographic metrics, like age, while maintaining privacy considerations would allow for a more representative and inclusive approach to demographic classification. 
-Further analysis of metadata and metadata combinations, such as profile pictures and other publicly available engagement metrics, could further improve classification accuracy and reveal additional influential features. Exploring these factors would help refine the model’s predictive capabilities and enable us to assess how different sources of metadata contribute to demographic classification. 
-
-
-
+Further work on this project would include retraining the model using a significantly larger dataset to enhance its generalizability and overall performance. While we trained our model on 5,000 tweets, expanding the dataset could provide deeper insights into model accuracy and robustness. Additionally, incorporating a more diverse range of gender identifications and other available demographic metrics, like age, while maintaining privacy considerations would allow for a more representative and inclusive approach to demographic classification. 
+Further analysis of metadata and metadata combinations, such as profile pictures and other publicly available engagement metrics, could further improve classification accuracy and reveal additional influential features. Exploring these factors would help refine the model’s predictive capabilities and enable us to assess how different sources of metadata contribute to demographic classification.
